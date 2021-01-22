@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div id="head">
+            <div class="top">
+                <div  class="width1024">
+                    <ul class="desktop-element">
+                        <li><a href="">Sign in </a></li>
+                        <li><a href="">My Account</a></li>
+                        <li><a href="">Order Status</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                    <div id="mobile-logo" class="mobile-element">BOOKS</div> 
+                    <select id="top-link" onchange="document.local='#' + this.value"  class="mobile-element form-control">
+                        <option disabled selected></option>
+                        <option value="#sign">Sign in</option>
+                        <option value="#acount">My Account</option>
+                        <option value="#order">Order Status</option>
+                        <option value="#help">Help</option>
+                    </select>
+                </div>
+            </div>
+            <div class="header-panel">
+                <div class="width1024 flex">
+                <div id="logo">
+                    <a href="#"><img src="imgs/logo.png" ></a>
+                </div>
+                <div id="search-field">
+                    <form action="#">
+                        <input type="text" name="search_text">
+                        <button>Search</button>
+                    </form>
+                </div>  
+                    <div id="basket-container">
+                        <div>Your card <span>(2 items)</span></div>
+                        <div><b>$125.0</b><a href="#">Checkout</a></div>
+                    </div>
+                    <div id="favor">
+                        <div>Wish list</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="width1024">
+                <li><a href="#">Computers</a></li>
+                <li><a href="#">Cooking</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Fiction</a></li>
+                <li class="active"><a href="#">Health</a></li>
+                <li><a href="#">Medical</a></li>
+                <li><a href="#">Reference</a></li>
+                <li><a href="#">Science</a></li>
+            </ul>          
+            <select onchange="document.location=this.value" class="mobile-element">
+                <option disabled selected></option>
+                <option value="#Computers">Computers</option>
+                <option value="#Cooking">Cooking</option>
+                <option value="#Education">Education</option>
+                <option value="#Health">Health</option>
+                <option value="#Medical">Medical</option>
+                <option value="#Reference">Reference</option>
+                <option value="#Science">Science</option>
+            </select>
+        </nav>
+    </header>
+    <div id="banner-container" class="width1024">
+        <div id="slider">
+           <div class="slides">
+                <div class="slide"><a href="#"><img src="imgs/banner01.jpg" alt=""></a></div>
+                <div class="slide"><a href="#"><img src="imgs/banner02.jpg" alt=""></a></div>
+                <div class="slide"><a href="#"><img src="imgs/banner03.jpg" alt=""></a></div>
+            </div>
+            <a href="#" class="banner-btn btn-left"><span></span><img src="imgs/banner_arrow_left.png"></a>
+            <a href="#" class="banner-btn btn-right"><span></span><img src="imgs/banner_arrow_right.png"></a>
+        </div>
+        <div id="rand-product-banner">
+            <h3>Deal of the Month</h3>
+            <div class="slugan">The Human Face of Big Data</div>
+            <div class="pic"><a href="#"> <img src="imgs/book01.jpg"></a></div>
+            <div class="price">
+                <span> Save 45% Today</span>
+                <b>$123.0</b>
+            </div>
+            <div class="btn-buy">
+                <a href="#">Buy now</a>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="width1024">
+        <div id="sidebar">
+            <h3>Categories</h3>
+            <div class="mobile-element">
+                <select onchange="document.location=this.value">
+                    <option value="">ALL</option>
+                    <optgroup label="Fiction & Literatur">
+                      <option value="#Children">Children</option>
+                      <option value="#Science Fiction">Science Fiction</option>
+                      <option value="#">Fantasy</option>
+                      <option value="#">Mystery</option>
+                      <option value="#">Romance</option>
+                      <option value="#">Horror</option>
+                      <option value="#">Poetry</option>
+                      <option value="#">Literature</option>
+                      <option value="#">Crime</option>
+                    </optgroup>
+                    <optgroup label="Non - Fiction">
+                        <option value="#">Children</option>
+                        <option value="#">Science Fiction</option>
+                        <option value="#">Fantasy</option>
+                        <option value="#">Mystery</option>
+                        <option value="#">Romance</option>
+                        <option value="#">Horror</option>
+                        <option value="#">Poetry</option>
+                        <option value="#">Literature</option>
+                        <option value="#">Crime</option>
+                      </optgroup>
+                  </select>
+            </div>
+            <div class="categories desktop-element">
+                <div class="categories-group">
+                    <ul>
+                        <li class="active"><a href="#">All</a></li>
+                    </ul>
+                </div>
+                <div class="categories-group">
+                    <h4>Fiction & Literatur</h4>
+                    <ul>
+                        <li><a href="#">Children</a></li>
+                        <li><a href="#">Science Fiction</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Mystery</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Poetry</a></li>
+                        <li><a href="#">Literature</a></li>
+                        <li><a href="#">Crime</a></li>
+                    </ul>
+                </div>
+                <div class="categories-group">
+                    <h4>Non - Fiction</h4>
+                    <ul>
+                        <li><a href="#">Children</a></li>
+                        <li><a href="#">Science Fiction</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Mystery</a></li>
+                        <li><a href="#">Romance</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>   
+        <div class="body">
+            <div class="bookmarks desktop-element">
+                <ul>
+                    <li class="active"><a href="#">Best sellers</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Used Books</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                </ul>
+            </div>
+            <div class="bookmarks-mobile mobile-element">
+                <select  onchange="document.location=this.value">
+                    <option value="#Best sellers">Best sellers</option>
+                    <option value="">New Arrivals</option>
+                    <option value="">Used Books</option>
+                    <option value="">Special Offers</option>
+                </select>
+            </div>
+            <div id="product-list">
+                <ul>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"> </a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                </ul>              
+                <ul>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                    <li>
+                        <img src="imgs/sale30.png">
+                        <a href="#"><img src="imgs/product01.jpg"></a>
+                        <h4><a href="">The here with Amber Eyes</a></h4>
+                        <div class="price">$45</div>
+                    </li>
+                </ul>
+                <div class="pager">
+                    <div class="link-to-begin"><a href="#"><<<</a></div>
+                    <div class="link-to-left"><a href="#"><</a></div>
+                    <div class="link-to-pager" class=""><a href="#">1</a></div>
+                    <div class="link-to-pager"><a href="#">2</a></div>
+                    <div class="link-to-pager current"><a href="#">3</a></div>
+                    <div class="link-to-pager"><a href="#">4</a></div>
+                    <div class="link-to-pager"><a href="#">5</a></div>
+                    <div class="link-to-right"><a href="#">></a></div>
+                    <div class="link-to-end"><a href="#">>>></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav class="width1024">
+            <div class="categories-group">
+                <h4>Biography & True Stories</h4>
+                <ul>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Science Fiction</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Mystery</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Poetry</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Crime</a></li>
+                </ul>
+            </div>
+            <div class="categories-group">
+                <h4>Professional & Reference </h4>
+                <ul>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Science Fiction</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Mystery</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Poetry</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Crime</a></li>
+                </ul>
+            </div>
+            <div class="categories-group">
+                <h4>Earth Sciences</h4>
+                <ul>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Science Fiction</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Mystery</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Poetry</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Crime</a></li>
+                </ul>
+            </div>
+            <div class="categories-group">
+                <h4>Mathematics</h4>
+                <ul>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Science Fiction</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Mystery</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Poetry</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Crime</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="payments-system">
+            <div>We accept all major Credit Card/Debit Card/Internet Banking </div>
+            <div><img src="imgs/payments01.jpg"><img src="imgs/payments02.jpg"><img src="imgs/payments03.jpg" alt=""></div>
+        </div>
+        <div class="info">
+            Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates
+        </div>
+    </footer>
+ </body>
+</html>
